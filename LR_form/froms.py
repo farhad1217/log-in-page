@@ -10,10 +10,6 @@ class RegisterForm(forms.ModelForm):
             "first_name": "Enter Your First Name",
             "last_name": "Enter Your Last Name",
             "email": "Enter Your Email",
-            "password": "Enter Your Password"
-        }
-        widget = {
-            "password": "PasswordInput"
         }
     confirm_password = forms.CharField(widget=forms.PasswordInput, label="Re Enter Your Password")
 
